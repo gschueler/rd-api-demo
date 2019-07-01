@@ -1,14 +1,17 @@
+
 plugins{
 	//defines scmVersion from git tags
     id 'pl.allegro.tech.build.axion-release' version '1.9.3'
 
     id 'groovy'
     id 'maven'
+    id 'application'
 
     id 'com.gradle.build-scan' version '1.13'
 }
+repositories { maven { url "https://rundeck.bintray.com/rundeck-maven" } }
 apply plugin: 'idea'
-
+mainClassName = 'test.rd.Test'
 scmVersion {
     tag {
     	//defines release tags like "v1.2.3"
@@ -26,6 +29,7 @@ allprojects {
 dependencies {
     // Use the latest Groovy version for building this library
     // compile "com.squareup.okhttp3:okhttp:3.6.0"
+    compile "org.rundeck.api:rd-api-client:1.1.5"
 
     // Use the awesome Spock testing and specification framework
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
