@@ -1,1 +1,11 @@
 /.gradle
+
+# Default ignored files
+/rd-api-test.iws
+
+# Project exclude paths
+/build/
+
+#idea
+*.iml
+*.ipr
