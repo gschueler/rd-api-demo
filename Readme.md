@@ -1,13 +1,9 @@
-My Project
+Demo of rd-api-client library usage
 ==========
 
-This is a prototype Java project.
+This demonstrates using the rd-api-client java library to connect to the [Rundeck](http://rundeck.com) API.
 
-TODO:
+The rd-api-client library is located here: <https://github.com/rundeck/rundeck-cli>
 
-- [ ] update gradle.properties: set group name
-- [ ] move `travis-template.yaml` to `.travis.yaml`, update contents
-- [ ] to enable travis releases, run `travis setup releases` to setup deployment
-- [ ] update readme
-- [ ] add a LICENSE file if public
-- [ ] commit to git!
+and is currently published to bintray here: <https://bintray.com/rundeck/rundeck-maven/rd-api-client>
+
