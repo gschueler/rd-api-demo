@@ -29,7 +29,7 @@ allprojects {
 dependencies {
     // Use the latest Groovy version for building this library
     // compile "com.squareup.okhttp3:okhttp:3.6.0"
-    compile "org.rundeck.api:rd-api-client:1.1.5"
+    compile "org.rundeck.api:rd-api-client:1.1.7"
 
     // Use the awesome Spock testing and specification framework
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
