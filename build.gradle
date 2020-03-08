@@ -1,15 +1,12 @@
-
 plugins{
 	//defines scmVersion from git tags
     id 'pl.allegro.tech.build.axion-release' version '1.9.3'
-
     id 'groovy'
     id 'maven-publish'
     id 'application'
-
+    id 'idea'
 }
 
-apply plugin: 'idea'
 mainClassName = 'test.rd.Test'
 scmVersion {
     tag {
@@ -22,12 +19,21 @@ scmVersion {
 
 allprojects {
     project.version = scmVersion.version
-    apply from: "${rootDir}/gradle/java.gradle"
+
+    if (JavaVersion.current().isJava8Compatible()) {
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+        }
+    }
+
+    java{
+        withJavadocJar()
+        withSourcesJar()
+    }
 }
 
 dependencies {
     // Use the latest Groovy version for building this library
-    // compile "com.squareup.okhttp3:okhttp:3.6.0"
     implementation "org.rundeck.api:rd-api-client:1.2.2"
 
     // Use the awesome Spock testing and specification framework
