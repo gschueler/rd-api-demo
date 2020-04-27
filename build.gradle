@@ -34,7 +34,7 @@ allprojects {
 
 dependencies {
     // Use the latest Groovy version for building this library
-    implementation "org.rundeck.api:rd-api-client:1.2.2"
+    implementation "org.rundeck.api:rd-api-client:1.2.4"
 
     // Use the awesome Spock testing and specification framework
     testImplementation 'org.spockframework:spock-core:1.0-groovy-2.4'
