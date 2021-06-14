@@ -5,8 +5,7 @@ This demonstrates using the rd-api-client java library to connect to the [Rundec
 
 The rd-api-client library is located here: <https://github.com/rundeck/rundeck-cli>
 
-and is currently published to bintray here: <https://bintray.com/rundeck/maven/rd-api-client>
-
+See [documentation on usage](https://rundeck.github.io/rundeck-cli/javalib/)
 
 ## Groovy Example
 
