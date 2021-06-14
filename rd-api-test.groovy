@@ -1,5 +1,4 @@
-//@GrabResolver(root = 'https://rundeck.bintray.com/maven',name = 'bintray')//optional for snapshot versions
-@Grab('org.rundeck.api:rd-api-client:1.2.4')
+@Grab('org.rundeck.api:rd-api-client:1.3.9')
 import org.rundeck.client.RundeckClient
 
 
